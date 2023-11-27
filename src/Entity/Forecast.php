@@ -90,6 +90,11 @@ class Forecast
         return $this;
     }
 
+    public function getFahrenheit(): ?string
+    {
+        return $this->temperature * 9 / 5 + 32;
+    }
+
     public function getWindSpeed(): ?string
     {
         return $this->windSpeed;
